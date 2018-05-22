@@ -1,12 +1,14 @@
 #All
 *
-#Except sourse files 
+#Except source files 
 !main.cpp
 !mainwindow.cpp
 !mainwindow.h
 !mainwindow.ui
 !recept.pro
 !recept.pro.user
+!database.h
+!database.cpp
 
 # Prerequisites
 *.d
