@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\database.o
+./debug\add_dialog.o
+./debug\refresh_dialog.o
+./debug\expenddialog.o
+./debug\moc_mainwindow.o
+./debug\moc_add_dialog.o
+./debug\moc_refresh_dialog.o
+./debug\moc_expenddialog.o
+);

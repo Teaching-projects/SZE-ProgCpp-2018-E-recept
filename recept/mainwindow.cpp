@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     db_init.setUserName("root");
     db_init.close();
     if(!db_init.open()){
-        QMessageBox::critical(this, "Error", "Closed");
+        QMessageBox::critical(this, "Error", "Unable to connect to the database!");
         QApplication::quit();
     }else {
         db_init.close();
@@ -32,10 +32,30 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    db = Database();
-    if(db.connnectIfNeccessary()){
-        QMessageBox::critical(this, "State", "Opened");
-    }else {
-        QMessageBox::critical(this, "State", "Closed");
-    }
+//    db = Database();
+//    if(db.connnectIfNeccessary()){
+//        QMessageBox::critical(this, "State", "Opened");
+//    }else {
+//        QMessageBox::critical(this, "State", "Closed");
+//    }
+    add_dialog *dialog = new add_dialog();
+    dialog->show();
+    int result = dialog->exec();
+    delete dialog;
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    Refresh_dialog *dialog = new Refresh_dialog();
+    dialog->show();
+    int result = dialog->exec();
+    delete dialog;
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    ExpendDialog *dialog = new ExpendDialog();
+    dialog->show();
+    int result = dialog->exec();
+    delete dialog;
 }
