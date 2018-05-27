@@ -28,13 +28,19 @@ SOURCES += main.cpp\
     database.cpp \
     add_dialog.cpp \
     refresh_dialog.cpp \
-    expenddialog.cpp
+    expenddialog.cpp \
+    drug.cpp \
+    storage.cpp \
+    expenditem.cpp
 
 HEADERS  += mainwindow.h \
     database.h \
     add_dialog.h \
     refresh_dialog.h \
-    expenddialog.h
+    expenddialog.h \
+    drug.h \
+    storage.h \
+    expenditem.h
 
 FORMS    += mainwindow.ui \
     add_dialog.ui \

@@ -5,6 +5,9 @@ INPUT(
 ./release\add_dialog.o
 ./release\refresh_dialog.o
 ./release\expenddialog.o
+./release\drug.o
+./release\storage.o
+./release\expenditem.o
 ./release\moc_mainwindow.o
 ./release\moc_add_dialog.o
 ./release\moc_refresh_dialog.o
