@@ -7,6 +7,7 @@
 #include "add_dialog.h"
 #include "refresh_dialog.h"
 #include "expenddialog.h"
+#include "optiondialog.h"
 
 namespace Ui {
 class MainWindow;
@@ -26,6 +27,8 @@ private slots:
     void on_pushButton_2_clicked();
 
     void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
 
 private:
     Ui::MainWindow *ui;
