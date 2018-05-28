@@ -31,7 +31,8 @@ SOURCES += main.cpp\
     expenddialog.cpp \
     drug.cpp \
     storage.cpp \
-    expenditem.cpp
+    expenditem.cpp \
+    optiondialog.cpp
 
 HEADERS  += mainwindow.h \
     database.h \
@@ -40,9 +41,11 @@ HEADERS  += mainwindow.h \
     expenddialog.h \
     drug.h \
     storage.h \
-    expenditem.h
+    expenditem.h \
+    optiondialog.h
 
 FORMS    += mainwindow.ui \
     add_dialog.ui \
     refresh_dialog.ui \
-    expenddialog.ui
+    expenddialog.ui \
+    optiondialog.ui
