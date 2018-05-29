@@ -84,3 +84,13 @@ void Drug::setPrice(int value)
 {
     price = value;
 }
+
+int Drug::getCount() const
+{
+    return count;
+}
+
+void Drug::setCount(int value)
+{
+    count = value;
+}
