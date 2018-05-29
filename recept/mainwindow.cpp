@@ -32,38 +32,24 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-//    db = Database();
-//    if(db.connnectIfNeccessary()){
-//        QMessageBox::critical(this, "State", "Opened");
-//    }else {
-//        QMessageBox::critical(this, "State", "Closed");
-//    }
     add_dialog *dialog = new add_dialog();
     dialog->show();
-    int result = dialog->exec();
-    delete dialog;
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
     Refresh_dialog *dialog = new Refresh_dialog();
     dialog->show();
-    int result = dialog->exec();
-    delete dialog;
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
     ExpendDialog *dialog = new ExpendDialog();
     dialog->show();
-    int result = dialog->exec();
-    delete dialog;
 }
 
 void MainWindow::on_pushButton_4_clicked()
 {
     OptionDialog *dialog = new OptionDialog();
     dialog->show();
-    int result = dialog->exec();
-    delete dialog;
 }
