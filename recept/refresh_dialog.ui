@@ -42,7 +42,7 @@
     <string>Kód:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="codeEdit">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -65,7 +65,7 @@
     <string>Mennyiség:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="countEdit">
    <property name="geometry">
     <rect>
      <x>90</x>

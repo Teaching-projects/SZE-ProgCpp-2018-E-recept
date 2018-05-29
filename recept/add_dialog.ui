@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>480</width>
-    <height>340</height>
+    <height>395</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>300</y>
+     <y>360</y>
      <width>341</width>
      <height>32</height>
     </rect>
@@ -52,7 +52,7 @@
     <string>Név:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="nameEdit">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -85,7 +85,7 @@
     <string>Leírás:</string>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="plainTextEdit">
+  <widget class="QPlainTextEdit" name="descEdit">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -118,7 +118,7 @@
     <string>Recept köteles:</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="paperBox">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -161,7 +161,7 @@
     <string>Beérkezett mennyiség:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="countEdit">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -194,7 +194,7 @@
     <string>Ár:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="priceEdit">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -227,11 +227,44 @@
     <string>Kód:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="codeEdit">
    <property name="geometry">
     <rect>
      <x>130</x>
      <y>70</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Minimum (opcionális):</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="minEdit">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>310</y>
      <width>113</width>
      <height>20</height>
     </rect>

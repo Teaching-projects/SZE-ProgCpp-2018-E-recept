@@ -63,7 +63,7 @@ void MainWindow::on_pushButton_3_clicked()
 void MainWindow::on_pushButton_4_clicked()
 {
     OptionDialog *dialog = new OptionDialog();
-        dialog->show();
-        int result = dialog->exec();
-        delete dialog;
+    dialog->show();
+    int result = dialog->exec();
+    delete dialog;
 }

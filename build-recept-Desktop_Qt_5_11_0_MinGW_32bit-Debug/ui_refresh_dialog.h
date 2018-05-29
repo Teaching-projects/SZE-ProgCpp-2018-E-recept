@@ -23,9 +23,9 @@ class Ui_Refresh_dialog
 public:
     QDialogButtonBox *buttonBox;
     QLabel *label;
-    QLineEdit *lineEdit;
+    QLineEdit *codeEdit;
     QLabel *label_2;
-    QLineEdit *lineEdit_2;
+    QLineEdit *countEdit;
 
     void setupUi(QDialog *Refresh_dialog)
     {
@@ -40,15 +40,15 @@ public:
         label = new QLabel(Refresh_dialog);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(10, 10, 81, 31));
-        lineEdit = new QLineEdit(Refresh_dialog);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setGeometry(QRect(90, 10, 171, 21));
+        codeEdit = new QLineEdit(Refresh_dialog);
+        codeEdit->setObjectName(QStringLiteral("codeEdit"));
+        codeEdit->setGeometry(QRect(90, 10, 171, 21));
         label_2 = new QLabel(Refresh_dialog);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(10, 50, 81, 31));
-        lineEdit_2 = new QLineEdit(Refresh_dialog);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
-        lineEdit_2->setGeometry(QRect(90, 50, 171, 21));
+        countEdit = new QLineEdit(Refresh_dialog);
+        countEdit->setObjectName(QStringLiteral("countEdit"));
+        countEdit->setGeometry(QRect(90, 50, 171, 21));
 
         retranslateUi(Refresh_dialog);
         QObject::connect(buttonBox, SIGNAL(accepted()), Refresh_dialog, SLOT(accept()));

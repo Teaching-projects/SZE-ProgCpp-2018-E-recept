@@ -8,8 +8,11 @@ INPUT(
 ./release\drug.o
 ./release\storage.o
 ./release\expenditem.o
+./release\optiondialog.o
+./release\inputvalidator.o
 ./release\moc_mainwindow.o
 ./release\moc_add_dialog.o
 ./release\moc_refresh_dialog.o
 ./release\moc_expenddialog.o
+./release\moc_optiondialog.o
 );

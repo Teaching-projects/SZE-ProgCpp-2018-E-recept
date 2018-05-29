@@ -8,8 +8,11 @@ INPUT(
 ./debug\drug.o
 ./debug\storage.o
 ./debug\expenditem.o
+./debug\optiondialog.o
+./debug\inputvalidator.o
 ./debug\moc_mainwindow.o
 ./debug\moc_add_dialog.o
 ./debug\moc_refresh_dialog.o
 ./debug\moc_expenddialog.o
+./debug\moc_optiondialog.o
 );

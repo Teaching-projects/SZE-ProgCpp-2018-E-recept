@@ -32,7 +32,8 @@ SOURCES += main.cpp\
     drug.cpp \
     storage.cpp \
     expenditem.cpp \
-    optiondialog.cpp
+    optiondialog.cpp \
+    inputvalidator.cpp
 
 HEADERS  += mainwindow.h \
     database.h \
@@ -42,7 +43,8 @@ HEADERS  += mainwindow.h \
     drug.h \
     storage.h \
     expenditem.h \
-    optiondialog.h
+    optiondialog.h \
+    inputvalidator.h
 
 FORMS    += mainwindow.ui \
     add_dialog.ui \

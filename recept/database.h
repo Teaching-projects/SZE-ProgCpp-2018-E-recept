@@ -3,6 +3,8 @@
 
 #include <QtSql>
 #include <QString>
+#include <QSqlQuery>
+#include <chrono>
 
 class Database{
     public:
@@ -10,9 +12,18 @@ class Database{
         ~Database();
         bool connnectIfNeccessary();
         QString getError();
+        bool changeNotChangedDrugMin(int count);
+        bool addNewDrug(QString name, QString code, QString desc, bool paper, int price, int min);
+        bool saveToStorage(int count, QString code);
+        bool exists(QString name, QString code);
 
-    private:
+        QString getHumanErrorMessage() const;
+
+private:
         QSqlDatabase db;
+        QString humanErrorMessage;
+
+        void setHumanErrorMessage(QString value);
 
 };
 
