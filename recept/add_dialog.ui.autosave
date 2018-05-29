@@ -164,7 +164,7 @@
   <widget class="QLineEdit" name="countEdit">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>190</x>
      <y>230</y>
      <width>113</width>
      <height>20</height>
@@ -263,7 +263,7 @@
   <widget class="QLineEdit" name="minEdit">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>190</x>
      <y>310</y>
      <width>113</width>
      <height>20</height>

@@ -5,6 +5,8 @@
 #include <QString>
 #include <QSqlQuery>
 #include <chrono>
+#include <QStringList>
+#include "drug.h"
 
 class Database{
     public:
@@ -16,6 +18,13 @@ class Database{
         bool addNewDrug(QString name, QString code, QString desc, bool paper, int price, int min);
         bool saveToStorage(int count, QString code);
         bool exists(QString name, QString code);
+        bool saveExpand(QString code, int count);
+        int checkCountAndRemove(QString code, int count);
+        QStringList getDrugs();
+        int getStorageCountByCode(QString code);
+        Drug getDrugByName(QString name);
+        bool changeDrugPrefs(QString name, QString desc, bool paper, int min, bool minEdit, int price);
+
 
         QString getHumanErrorMessage() const;
 

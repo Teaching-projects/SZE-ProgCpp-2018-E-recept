@@ -32,6 +32,9 @@ public:
     int getPrice() const;
     void setPrice(int value);
 
+    int getCount() const;
+    void setCount(int value);
+
 private:
     int id;
     QString name;
@@ -41,6 +44,7 @@ private:
     int min;
     bool minEdit;
     int price;
+    int count;
 
 
 };

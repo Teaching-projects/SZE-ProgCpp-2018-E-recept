@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>401</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>240</y>
+     <y>360</y>
      <width>341</width>
      <height>32</height>
     </rect>
@@ -26,7 +26,7 @@
     <enum>Qt::Horizontal</enum>
    </property>
    <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+    <set>QDialogButtonBox::Cancel</set>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -34,8 +34,8 @@
     <rect>
      <x>20</x>
      <y>10</y>
-     <width>71</width>
-     <height>16</height>
+     <width>141</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
@@ -46,66 +46,132 @@
     </font>
    </property>
    <property name="text">
-    <string>Beállítások</string>
+    <string>Gyógyszerek</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="drugsList">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>141</width>
+     <height>331</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameEdit">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>30</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="codeEdit">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="descEdit">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>90</y>
+     <width>211</width>
+     <height>64</height>
+    </rect>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>40</y>
-     <width>141</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Minimum készletek beállítása:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>70</y>
+     <x>170</x>
+     <y>169</y>
      <width>81</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Termékkód:</string>
+    <string>Recept köteles:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QComboBox" name="paperBox">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>100</y>
-     <width>101</width>
-     <height>21</height>
+     <x>260</x>
+     <y>170</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Igen</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Nem</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="minEdit">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>200</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="priceEdit">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>230</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>320</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Minimum  mennyiség:</string>
+    <string>Mentés</string>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox">
+  <widget class="QLineEdit" name="countEdit">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>100</y>
-     <width>81</width>
-     <height>22</height>
+     <x>170</x>
+     <y>260</y>
+     <width>211</width>
+     <height>20</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>70</y>
-     <width>121</width>
-     <height>22</height>
-    </rect>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
